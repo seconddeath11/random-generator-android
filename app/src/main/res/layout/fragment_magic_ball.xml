@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".options.magicball.MagicBallFragment">
+
+        <ImageView
+            android:id="@+id/ball_image"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:src="@drawable/ball_empty"
+            android:contentDescription="@string/magic_ball"/>
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/ball_image"
+            android:layout_alignTop="@id/ball_image"
+            android:layout_alignRight="@id/ball_image"
+            android:layout_alignBottom="@id/ball_image"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+        <Button
+            android:id="@+id/get_answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/get_answer"/>
+    </LinearLayout>
+    </ScrollView>
+</layout>

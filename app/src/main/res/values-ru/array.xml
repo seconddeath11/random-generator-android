@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="options_array">
+        <item>Бесспорно</item>
+        <item>Предрешено</item>
+        <item>Никаких \nсомнений</item>
+        <item>Определённо \nда</item>
+        <item>Можешь быть \n уверен в этом</item>
+        <item>Мне кажется \n—\n «да»</item>
+        <item>Вероятнее \nвсего</item>
+        <item>Хорошие \nперспективы</item>
+        <item>Знаки \nговорят — «да»</item>
+        <item>Да</item>
+        <item>Пока не ясно,\nпопробуй снова</item>
+        <item>Спроси позже</item>
+        <item>Лучше \nне рассказывать</item>
+        <item>Сейчас \nнельзя \nпредсказать</item>
+        <item>Сконцентрируйся \n и \n спроси опять</item>
+        <item>Даже не думай</item>
+        <item>Мой ответ — «нет»</item>
+        <item>По моим \nданным — «нет»</item>
+        <item>Перспективы \n не очень хорошие</item>
+        <item>Весьма \nсомнительно</item>
+    </string-array>
+</resources>

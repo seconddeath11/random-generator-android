@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Random Generator</string>
+    <string name="start">Start</string>
+    <string name="number">Number</string>
+    <string name="list">List</string>
+    <string name="dice">Dice</string>
+    <string name="coin">Coin</string>
+    <string name="magic_ball">Magic 8-Ball</string>
+    <string name="title">Random number generator</string>
+    <string name="menu">Menu</string>
+    <string name="flip">Flip</string>
+    <string name="add">Add</string>
+    <string name="choose">Choose</string>
+    <string name="your_list">Your list</string>
+    <string name="clear_all">Clear all</string>
+    <string name="chosen_values">Chosen values</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="without_repetition">Without repetition</string>
+    <string name="from_value">3</string>
+    <string name="to_value">10</string>
+    <string name="quantity_value">2</string>
+    <string name="get_answer">Get answer</string>
+    <string name="quantity">Quantity</string>
+    <string name="cat">cat</string>
+
+</resources>

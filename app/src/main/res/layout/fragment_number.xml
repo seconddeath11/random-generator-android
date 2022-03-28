@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:context=".options.number.NumberFragment"
+        android:padding="30dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/from"/>
+       <EditText
+            android:id="@+id/from_number"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="@string/from_value"
+           android:textAlignment="center"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:textSize="20sp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/to"/>
+        <EditText
+            android:id="@+id/to_number"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="20sp"
+            android:hint="@string/to_value"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/quantity"/>
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:hint="@string/quantity_value"/>
+
+    </LinearLayout>
+        <CheckBox
+            android:id="@+id/checkbox_different"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/without_repetition"/>
+       <Button
+           android:id="@+id/choose_button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+
+           android:text="@string/choose"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chosen_values"
+            android:textSize="20sp"
+            android:layout_margin="20dp"/>
+        <TextView
+            android:id="@+id/chosen_values"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+    </ScrollView>
+</layout>

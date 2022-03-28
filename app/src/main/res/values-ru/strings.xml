@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Генератор случайных чисел</string>
+    <string name="start">Начать</string>
+    <string name="number">Число</string>
+    <string name="list">Список</string>
+    <string name="dice">Кубики</string>
+    <string name="coin">Монета</string>
+    <string name="magic_ball">Шар предсказаний</string>
+    <string name="title">Генератор случайных чисел</string>
+    <string name="menu">Меню</string>
+    <string name="flip">Бросить</string>
+    <string name="add">Добавить</string>
+    <string name="choose">Выбрать</string>
+    <string name="your_list">Ваш список</string>
+    <string name="clear_all">Очистить все</string>
+    <string name="chosen_values">Выбранные значения</string>
+    <string name="from">От</string>
+    <string name="to">До</string>
+    <string name="without_repetition">Без повторений</string>
+    <string name="from_value">3</string>
+    <string name="to_value">10</string>
+    <string name="quantity_value">2</string>
+    <string name="get_answer">Получить ответ</string>
+    <string name="quantity">Количество</string>
+    <string name="cat">cat</string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/titleFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.randomgenerator.MenuFragment"
+        android:label="@string/menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_coinFragment"
+            app:destination="@id/coinFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_listFragment"
+            app:destination="@id/listFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_numberFragment"
+            app:destination="@id/numberFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_magicBallFragment"
+            app:destination="@id/magicBallFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_diceFragment"
+            app:destination="@id/diceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/titleFragment"
+        android:name="com.example.randomgenerator.TitleFragment"
+        android:label="@string/title"
+        tools:layout="@layout/fragment_title">
+        <action
+            android:id="@+id/action_titleFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/coinFragment"
+        android:name="com.example.randomgenerator.options.coin.CoinFragment"
+        android:label="CoinFragment" />
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.randomgenerator.options.list.ListFragment"
+        android:label="ListFragment" />
+    <fragment
+        android:id="@+id/numberFragment"
+        android:name="com.example.randomgenerator.options.number.NumberFragment"
+        android:label="NumberFragment" />
+    <fragment
+        android:id="@+id/magicBallFragment"
+        android:name="com.example.randomgenerator.options.magicball.MagicBallFragment"
+        android:label="MagicBallFragment" />
+    <fragment
+        android:id="@+id/diceFragment"
+        android:name="com.example.randomgenerator.options.dice.DiceFragment"
+        android:label="DiceFragment" />
+</navigation>
