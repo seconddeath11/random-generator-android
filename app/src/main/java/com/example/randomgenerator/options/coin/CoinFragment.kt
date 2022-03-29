@@ -8,8 +8,6 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.example.randomgenerator.R
 import com.example.randomgenerator.databinding.FragmentCoinBinding
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.runBlocking
 
 class CoinFragment : Fragment() {
     private lateinit var binding: FragmentCoinBinding
