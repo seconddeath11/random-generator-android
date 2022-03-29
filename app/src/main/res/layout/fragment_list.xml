@@ -49,6 +49,11 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/quantity"/>
         <EditText
             android:id="@+id/number_of_answers"
             android:layout_width="60dp"
@@ -59,7 +64,8 @@
             android:hint="@string/from_value"
             android:importantForAutofill="no"
             android:imeOptions="actionDone"
-            android:singleLine="true"/>
+            android:singleLine="true"
+            android:layout_marginHorizontal="20dp"/>
         <Button
             android:id="@+id/choose_button"
             android:layout_width="wrap_content"

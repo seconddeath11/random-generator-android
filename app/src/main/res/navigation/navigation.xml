@@ -37,21 +37,21 @@
     <fragment
         android:id="@+id/coinFragment"
         android:name="com.example.randomgenerator.options.coin.CoinFragment"
-        android:label="CoinFragment" />
+        android:label="@string/coin" />
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.randomgenerator.options.list.ListFragment"
-        android:label="ListFragment" />
+        android:label="@string/list" />
     <fragment
         android:id="@+id/numberFragment"
         android:name="com.example.randomgenerator.options.number.NumberFragment"
-        android:label="NumberFragment" />
+        android:label="@string/number" />
     <fragment
         android:id="@+id/magicBallFragment"
         android:name="com.example.randomgenerator.options.magicball.MagicBallFragment"
-        android:label="MagicBallFragment" />
+        android:label="@string/magic_ball" />
     <fragment
         android:id="@+id/diceFragment"
         android:name="com.example.randomgenerator.options.dice.DiceFragment"
-        android:label="DiceFragment" />
+        android:label="@string/dice" />
 </navigation>
