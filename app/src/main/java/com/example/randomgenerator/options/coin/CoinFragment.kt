@@ -31,4 +31,5 @@ class CoinFragment : Fragment() {
         return binding.root
     }
 
+
 }

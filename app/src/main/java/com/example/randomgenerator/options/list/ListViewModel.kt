@@ -4,35 +4,40 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class ListViewModel : ViewModel(){
-    private val _list = MutableLiveData<MutableList<String>>()
-    val list: MutableLiveData<MutableList<String>>
-        get() = _list
+    private val _inList = MutableLiveData<MutableList<String>>()
+    val inList: MutableLiveData<MutableList<String>>
+        get() = _inList
+
+    private val _outString = MutableLiveData<String>()
+    val outString: MutableLiveData<String>
+        get() = _outString
 
     fun onAdd(text: String){
-        if (_list.value == null){
-            _list.value = mutableListOf()
+        if (_inList.value == null){
+            _inList.value = mutableListOf()
         }
-        _list.value?.add(text)
+        _inList.value?.add(text)
         notifyObservers()
     }
     private fun notifyObservers(){
-        list.postValue(_list.value)
+        inList.postValue(_inList.value)
     }
 
-    fun onChoose(num: Int) : List<String>? {
-        if (_list.value == null)
-            return null
-        val quantity = if (num > list.value!!.size) {
-            list.value!!.size
+    fun onChoose(num: Int) {
+        if (_inList.value == null)
+            return
+        val quantity = if (num > inList.value!!.size) {
+            inList.value!!.size
         }
         else{
             num
         }
-        return _list.value?.shuffled()?.subList(0, quantity)
+        _outString.value =  _inList.value?.shuffled()?.subList(0, quantity).toString()
     }
 
     fun onClear(){
-        _list.value = null
+        _inList.value = null
+        _outString.value = null
         notifyObservers()
     }
 

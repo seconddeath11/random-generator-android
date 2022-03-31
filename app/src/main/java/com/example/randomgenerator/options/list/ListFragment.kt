@@ -23,7 +23,7 @@ class ListFragment : Fragment() {
 
 
         viewModel = ViewModelProvider(this).get(ListViewModel::class.java)
-        viewModel.list.observe(viewLifecycleOwner) { list ->
+        viewModel.inList.observe(viewLifecycleOwner) { list ->
             if (list != null) {
                 adapter.data = list
             }else{
@@ -39,12 +39,14 @@ class ListFragment : Fragment() {
         binding.chooseButton.setOnClickListener {
             try {
                 val num = binding.numberOfAnswers.text.toString().toInt()
-                val answer = viewModel.onChoose(num).toString()
-                binding.answers.text = answer.slice(1 until answer.length - 1)
+                viewModel.onChoose(num).toString()
             } catch (e: NumberFormatException){
-                binding.answers.text = null
+
             }
 
+        }
+        viewModel.outString.observe(viewLifecycleOwner){ string ->
+            binding.answers.text = string.slice(1 until string.length - 1)
         }
         binding.clearButton.setOnClickListener{
             viewModel.onClear()

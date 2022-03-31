@@ -23,8 +23,10 @@ class MagicBallFragment : Fragment() {
         val array = resources.getStringArray(R.array.options_array).toList()
 
         binding.getAnswerButton.setOnClickListener {
-            val value = viewModel.onChoose(array)
-            binding.text.text = value
+            viewModel.onChoose(array)
+        }
+        viewModel.outString.observe(viewLifecycleOwner){string ->
+            binding.text.text = string
         }
         return binding.root
     }

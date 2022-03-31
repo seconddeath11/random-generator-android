@@ -24,15 +24,18 @@ class NumberFragment : Fragment() {
                 val from = binding.fromNumber.text.toString().toInt()
                 val to = binding.toNumber.text.toString().toInt()
                 val number = binding.number.text.toString().toInt()
-                val list: List<Int> = if (binding.checkboxDifferent.isChecked) {
+                if (binding.checkboxDifferent.isChecked) {
                     viewModel.onChooseDifferent(from, to, number)
                 } else {
                     viewModel.onChoose(from, to, number)
                 }
-                binding.chosenValues.text = list.toString().slice(1 until list.toString().length-1)
+
             }catch (e: NumberFormatException){
                 binding.chosenValues.text = null
             }
+        }
+        viewModel.outString.observe(viewLifecycleOwner){ string ->
+            binding.chosenValues.text = string.slice(1 until string.length-1)
         }
         return binding.root
     }

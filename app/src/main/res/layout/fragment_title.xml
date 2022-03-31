@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,9 +17,11 @@
         <ImageView
             android:id="@+id/titleImage"
             android:layout_width="wrap_content"
-            android:layout_height="300dp"
+            android:layout_height="250dp"
             android:layout_gravity="center"
+            android:paddingTop="10dp"
             android:src="@drawable/dice_title"
+
             android:contentDescription="@string/app_name"/>
 
         <Button
@@ -26,7 +29,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="40sp"
+            android:textSize="30sp"
             android:layout_marginTop="20dp"
             android:text="@string/start" />
 
