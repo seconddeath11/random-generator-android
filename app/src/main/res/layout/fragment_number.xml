@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
         tools:context=".options.number.NumberFragment"
@@ -24,7 +24,7 @@
                 android:text="@string/from"/>
        <EditText
             android:id="@+id/from_number"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:hint="@string/from_value"
@@ -41,7 +41,7 @@
             android:text="@string/to"/>
         <EditText
             android:id="@+id/to_number"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:textAlignment="center"
@@ -61,7 +61,7 @@
             android:text="@string/quantity"/>
         <EditText
             android:id="@+id/number"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:inputType="number"
             android:layout_marginStart="10dp"

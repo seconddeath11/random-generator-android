@@ -6,8 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import com.example.randomgenerator.R
 import com.example.randomgenerator.databinding.FragmentCoinBinding
+import com.example.randomgenerator.options.number.NumberViewModel
 
 class CoinFragment : Fragment() {
     private lateinit var binding: FragmentCoinBinding
@@ -16,7 +18,7 @@ class CoinFragment : Fragment() {
                               savedInstanceState: Bundle?): View {
         binding = DataBindingUtil.inflate(
             inflater, R.layout.fragment_coin, container, false)
-        viewModel = CoinViewModel()
+        viewModel = ViewModelProvider(this).get(CoinViewModel::class.java)
         binding.flipButton.setOnClickListener {
                viewModel.onFlip()
         }
@@ -30,6 +32,5 @@ class CoinFragment : Fragment() {
         }
         return binding.root
     }
-
 
 }

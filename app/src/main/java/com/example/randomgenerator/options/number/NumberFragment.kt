@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.randomgenerator.R
 import com.example.randomgenerator.databinding.FragmentNumberBinding
+import java.lang.IllegalArgumentException
 import java.lang.NumberFormatException
 
 class NumberFragment : Fragment() {
@@ -31,6 +32,8 @@ class NumberFragment : Fragment() {
                 }
 
             }catch (e: NumberFormatException){
+                binding.chosenValues.text = null
+            } catch (e: IllegalArgumentException) {
                 binding.chosenValues.text = null
             }
         }

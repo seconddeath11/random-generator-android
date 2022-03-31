@@ -37,7 +37,7 @@ class ListViewModel : ViewModel(){
 
     fun onClear(){
         _inList.value = null
-        _outString.value = null
+        _outString.value = ""
         notifyObservers()
     }
 
